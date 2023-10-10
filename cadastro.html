@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script type="text/javascript" src="cep.js"> </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "/css/cadastro.css">
+    <title>AreaDoCliente</title>
+</head>
+<body>
+    <header>
+    <nav class="nav-bar">
+        <div class="logo">
+            <img src="/imagens/telecall.png"> <h1> Telecall</h1>
+        </div>
+        
+        <div class="login-button">
+            <button><a href="../index.html">Voltar ao início</a></button>
+        </div>
+
+    </header>
+    <div class="page">
+        <form method="POST" class="formCadastro">
+            <h1 class="area">Área de cadastro</h1>
+            <p>Digite os seus dados de acesso nos campos abaixo.</p><br>
+            <label for="nome">Nome:</label>
+            <input type="text" placeholder="Digite seu nome" autofocus="true" required="Preencha o campo corretamente"  />   <br><br>
+            <label for="data">Data de Nascimento:</label> 
+            <input type="date" autofocus="true" required="Preencha o campo corretamente" /> <br><br>
+            <label for="sexo">Sexo:</label> <br><br>
+            <input type="radio"  name="sex" value="masc" placeholder="" required="Preencha o campo corretamente" /> 
+            <label class="masc" for="sexo">Masculino</label> <br>
+            <input type="radio"  name="sex" value="fem"  placeholder="" required="Preencha o campo corretamente" />
+            <label class="fem" for="sexo">Feminino</label> <br>
+            <input type="radio"  name="sex" value="outros" placeholder="" required="Preencha o campo corretamente" />
+            <label class="outros" for="sexo">Outros</label> <br><br>
+            <label for="nome">Nome materno:</label>
+            <input type="text" placeholder="Digite o nome materno" autofocus="true" required="Preencha o campo corretamente" /> <br><br>
+            <label for="nome">CPF:</label>
+            <input type="number" placeholder="xxx-xxx-xxx-xx" autofocus="true" required="Preencha o campo corretamente" /> <br><br>
+            <label for="nome">Telefone Celular:</label>
+            <input type="number" placeholder="+55 (xx) xxxxx-xxxx" autofocus="true" required="Preencha o campo corretamente" /> <br><br>
+            <label for="nome">Telefone Fixo:</label>
+            <input type="number" placeholder="+55 (xx) xxxx-xxxx" autofocus="true" required="Preencha o campo corretamente" /> <br><br>
+            <hr>
+            <h1 class="endereco">Endereço</h1>
+            <br><br>
+            <label for="nome">CEP:</label>
+            <input type="text" id="cep" placeholder="_____-___" autofocus="true" required="Preencha o campo corretamente" /> <br><br>
+            <label for="nome">Rua:</label>
+            <input type="text" id="rua" placeholder="Digite sua Rua" autofocus="true" required="Preencha o campo corretamente" /> <br><br>
+            <label for="nome">Numero:</label>
+            <input type="number" id="num" placeholder="Número da residência" autofocus="true" required="Preencha o campo corretamente" /> <br><br>
+            <label for="nome">Complemento:</label>
+            <input type="text" placeholder="(Opcional)" /> <br><br>
+            <label for="nome">Bairro:</label>
+            <input type="text" id="bairro" placeholder="Digite seu Bairro" autofocus="true" required="Preencha o campo corretamente" /> <br><br>
+            <label for="nome">Estado:</label>
+            <input type="text" id="estado" placeholder="Digite seu Estado" autofocus="true" required="Preencha o campo corretamente" /> <br><br>
+            <label for="nome">Cidade:</label>
+            <input type="text" id="cidade" placeholder="Digite sua cidade" autofocus="true" required="Preencha o campo corretamente" /> <br><br>
+
+            <br><br>
+           <input type="submit" value="Cadastrar" class="btn"/>
+        </form>
+    </div>
+       
+
+</body>
+</html>
